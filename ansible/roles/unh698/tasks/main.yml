@@ -28,5 +28,5 @@
 #   http://docs.ansible.com/ansible/uri_module.html
 - name: verify that webserver is running
   uri:
-    url: xxxxxxx
+    url: http://{{ my_AWS_IP }}:{{ unh698_host_port }}
     method: GET
