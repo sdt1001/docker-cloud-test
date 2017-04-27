@@ -21,7 +21,7 @@ class FlaskrTestCase(unittest.TestCase):
         rv = self.app.get('/')
         #search the page contents for the link to your topic
         #replace XXXXXXX with text you expect to see on main page that links to subpage
-        assert b'topicPage' in rv.data
+        assert b'Asia' in rv.data
 
     def test_my_topic(self):
         rv = self.app.get('/topic_page')
